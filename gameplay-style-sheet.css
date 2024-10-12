@@ -19,7 +19,6 @@ body {
     height: 100vh;
 }
 
-/* Header for location */
 #location-header {
     font-family: "Creepster", system-ui;
     text-align: center;
@@ -27,7 +26,6 @@ body {
     font-size: 24px;
 }
 
-/* Main container for image and text */
 #game-container {
     display: flex;
     flex-direction: column;
@@ -35,9 +33,8 @@ body {
     flex-grow: 1;
 }
 
-/* Image area styling (reduce size) */
 #image-area {
-    flex: 0.3; /* Takes 30% of the remaining vertical space */
+    flex: 0.3; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +47,9 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Text area styling (increase size) */
+
 #text-area {
-    flex: 0.7; /* Takes 70% of the remaining vertical space */
+    flex: 0.7;
     background-color: #333;
     padding: 40px;
     text-align: center;
