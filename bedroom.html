@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted Mansion Adventure</title>
+    <link rel="stylesheet" href="gameplay-style-sheet.css">
+</head>
+<body>
+
+    <!-- Navigation bar for paths taken -->
+    <nav id="sidebar">
+        <h2>Navigation</h2>
+        <ol>
+            <li><a href="scene1.html">Foyer</a></li>
+            <li><a href="hallway.html">Hallway</a></li>
+            <!-- Add more links for past locations as the game progresses -->
+        </ol>
+    </nav>
+
+    <!-- Main content area for gameplay -->
+    <div id="main-content">
+
+        <!-- Header for displaying player's location -->
+        <header id="location-header">
+            <h1>The Master Bedroom</h1>
+        </header>
+
+        <!-- Main gameplay area -->
+        <div id="game-container">
+            
+            <!-- Image area -->
+            <div id="image-area">
+                <img src="images/bedroom.png" alt="The bedroom" />
+            </div>
+
+            <!-- Text area with prompts -->
+            <div id="text-area">
+                <p id="story-text">
+                    You enter what seems to be the master bedroom. The smell of decay makes you realize that its residents are long gone.
+                </p>
+                <p id="story-text">
+                    In the corner of the room, you notice a door with a combination lock. What numbers do you put in it?
+                </p>
+
+                <form>
+                    <input type="checkbox" id="toggle-message1" hidden>
+                    <label for="toggle-message1" class="button">5437</label>
+                    <p id="message1">Wrong combination! Try again.</p>
+                    
+                    <!-- Second button and message -->
+                    <input type="checkbox" id="toggle-message2" hidden>
+                    <label for="toggle-message2" class="button">4370</label>
+                    <p id="message2">
+                        <a href="next-scene.html" class="link-button">Correct! The door creaks open.</a>
+                    </p>
+
+                    <input type="checkbox" id="toggle-message3" hidden>
+                    <label for="toggle-message3" class="button">8239</label>
+                    <p id="message3">Wrong combination! Try again.</p>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

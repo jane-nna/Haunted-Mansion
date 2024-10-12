@@ -93,7 +93,7 @@ body {
 }
 
 /* Button styling */
-.button{
+.button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -109,4 +109,25 @@ body {
 .button:hover {
     background-color: #2e3338;
     transform: scale(1.05);
+}
+
+.link-button{
+    color: white;
+}
+.link-button:hover{
+    color: red;
+}
+
+#message1, #message2, #message3 {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #f0e68c;
+}
+
+/* Show the message when the checkbox is checked */
+#toggle-message1:checked ~ #message1,
+#toggle-message2:checked ~ #message2,
+#toggle-message3:checked ~ #message3 {
+    display: inline-block;
 }
