@@ -1,4 +1,12 @@
-/* General body styling */
+.creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 700px;
+} 
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +21,7 @@ body {
 
 /* Header for location */
 #location-header {
+    font-family: "Creepster", system-ui;
     text-align: center;
     padding: 20px;
     font-size: 24px;
