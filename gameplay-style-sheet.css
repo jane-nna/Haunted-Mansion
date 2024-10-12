@@ -1,12 +1,4 @@
-.creepster-regular {
-    font-family: "Creepster", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 700px;
-} 
-
-
-
+/* General body styling */
 body {
     margin: 0;
     padding: 0;
@@ -14,18 +6,56 @@ body {
     background-color: #1a1a1a;
     color: #fff;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
 }
 
+/* Sidebar navigation */
+#sidebar {
+    width: 200px;
+    background-color: #bebebe;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin: 10px 0;
+}
+
+#sidebar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#sidebar a:hover {
+    color: #aaa;
+}
+
+/* Main content container */
+#main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header for location */
 #location-header {
-    font-family: "Creepster", system-ui;
     text-align: center;
     padding: 20px;
     font-size: 24px;
 }
 
+/* Main container for image and text */
 #game-container {
     display: flex;
     flex-direction: column;
@@ -33,21 +63,22 @@ body {
     flex-grow: 1;
 }
 
+/* Image area styling (reduced size) */
 #image-area {
-    flex: 0.3; 
+    flex: 0.3;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #222;
 }
 
 #image-area img {
     max-width: 80%;
     height: auto;
-    border: 5px solid #444;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-
+/* Text area styling (increased size) */
 #text-area {
     flex: 0.7;
     background-color: #333;
@@ -61,7 +92,7 @@ body {
     margin-bottom: 20px;
 }
 
-
+/* Button styling */
 button {
     background-color: #555;
     color: white;
