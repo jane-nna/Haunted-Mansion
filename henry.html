@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted Mansion Adventure</title>
+    <link rel="stylesheet" href="gameplay-style-sheet.css">
+
+</head>
+<body>
+
+    <!-- Navigation bar for paths taken -->
+    <nav id="sidebar">
+        <h2>it's too late</h2>
+    </nav>
+    <!-- Main gameplay area -->
+    <div id="game-container">
+            
+        <!-- Image area -->
+        <div id="image-area">
+            <img src="images/door.png" alt="The kitchen" />
+        </div>
+
+        <!-- Text area with prompts -->
+        <div id="text-area">
+            <p id="story-text">
+                You see nothing...do you call out?
+            </p>
+            <button class="button" onclick="document.getElementById('delayed-audio').play()">Hello...?</button>
+
+            <audio id="delayed-audio" src="audio/lime-lips-scream.mp3"></audio>
+            <!-- Button for the next prompt -->
+        </div>
+
+    </div>
+    
+
+</body>
+</html>

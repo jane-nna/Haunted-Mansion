@@ -131,3 +131,17 @@ body {
 #toggle-message3:checked ~ #message3 {
     display: inline-block;
 }
+
+
+/*FOR JUMPSCARE*/
+/* Keyframes to unmute the audio */
+@keyframes unmuteAudio {
+    0% { volume: 0; } /* Initially muted */
+    100% { volume: 1; } /* Unmuted after the delay */
+}
+
+/* Apply the delay */
+#delayed-audio {
+    animation: unmuteAudio 0s ease-in 10s forwards; /* Delay the unmute for 5 seconds */
+}
+
