@@ -7,50 +7,32 @@
     <link rel="stylesheet" href="gameplay-style-sheet.css">
 </head>
 <body>
-
-    <!-- Navigation bar for paths taken -->
     <nav id="sidebar">
         <h2>Navigation</h2>
         <ol>
-            <li><a href="scene1.html">Foyer</a></li>
-            <li><a href="hallway.html">Hallway</a></li>
-            <!-- Add more links for past locations as the game progresses -->
+            <li><a href="foyer.html">Foyer</a></li>
+            <li><a href="kitchen.html">kitchen</a></li>
         </ol>
     </nav>
-
-    <!-- Main content area for gameplay -->
     <div id="main-content">
-
-        <!-- Header for displaying player's location -->
         <header id="location-header">
-            <h1>The Kitchen</h1>
+            <h1>Kitchen hallway</h1>
         </header>
-
-        <!-- Main gameplay area -->
         <div id="game-container">
-            
-            <!-- Image area -->
             <div id="image-area">
                 <img src="images/kitchen-hallway.png" alt="The kitchen hallway" />
             </div>
-
-            <!-- Text area with prompts -->
             <div id="text-area">
                 <p id="story-text">
                     After leaving the kitchen, you run into a shocking clean and upkept hallway. You notice the hallway leads back to the foyer. As you are walking a piece of paper gets stuck on your shoe! What do you do next?
                 </p>
-                
-                <!-- Button for the next prompt -->
                 <form action="next-scene.html">
                     <a href="paper.html" class="button">read piece of paper</a>
                     <a href="foyer.html" class="button">Go to the foyer</a>
                     <a href="kitchen.html" class ="button">go back to the kitchen</a>
                 </form>
             </div>
-
         </div>
-
     </div>
-
 </body>
 </html>
