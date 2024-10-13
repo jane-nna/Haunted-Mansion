@@ -7,49 +7,31 @@
     <link rel="stylesheet" href="gameplay-style-sheet.css">
 </head>
 <body>
-
-    <!-- Navigation bar for paths taken -->
     <nav id="sidebar">
         <h2>Navigation</h2>
         <ol>
-            <li><a href="scene1.html">Foyer</a></li>
-            <li><a href="hallway.html">Hallway</a></li>
-            <!-- Add more links for past locations as the game progresses -->
+            <li><a href="foyer.html">Foyer</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
         </ol>
     </nav>
-
-    <!-- Main content area for gameplay -->
     <div id="main-content">
-
-        <!-- Header for displaying player's location -->
         <header id="location-header">
-            <h1>mysterious paper</h1>
+            <h1>Mysterious Paper</h1>
         </header>
-
-        <!-- Main gameplay area -->
         <div id="game-container">
-            
-            <!-- Image area -->
             <div id="image-area">
                 <img src="images/paper.png" alt="paper" />
             </div>
-
-            <!-- Text area with prompts -->
             <div id="text-area">
                 <p id="story-text">
                     The note has the number 4370 written in blood... What do you do next?
                 </p>
-                
-                <!-- Button for the next prompt -->
                 <form action="next-scene.html">
                     <a href="foyer.html" class="button">Go to the foyer</a>
                     <a href="kitchen.html" class ="button">go back to the kitchen</a>
                 </form>
             </div>
-
         </div>
-
     </div>
-
 </body>
 </html>

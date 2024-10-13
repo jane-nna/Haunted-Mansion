@@ -1,5 +1,3 @@
-
-/*custom fonts*/
 .creepster-regular {
     font-family: "Creepster", system-ui;
     font-weight: 400;
@@ -22,7 +20,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10; /* makes it appear in front of everything else*/
+    z-index: 10; 
 }
 
 .button{
@@ -43,9 +41,7 @@
     transform: scale(1.05);
 }
 
-/*The main content area will be used to section the information on the page, in a border*/
 .mainContent{
-    /*this section is used to center all the information in the center of the screen. Centering it both vertically and horizontally*/
     width: 100%;
     height: 100%;
     position: absolute;
@@ -54,8 +50,6 @@
     left: 0;
     right: 0;
     margin: auto;
-
-    /*this is used to create the border to hold the information and sets it to */
     background-image: url("images/grayShadow.png");
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -96,10 +90,6 @@
     right:200px;
 }
 
-
-
-/*animations to move the grass side by side*/
-/*This will move one image of the grass to the right, then back, in a repeated motion*/
 @keyframes grass-right {
     0% {left: 0px; bottom: 0px;}
     50% {left: 50px; bottom: 10px;}
@@ -118,7 +108,6 @@
      animation-iteration-count: infinite;
  }
  
- /*Animates the grass to move to the left*/
  @keyframes grass-left{
     0% {left: 0px; bottom: 0px;}
     50% {right: 50px; bottom: 10px;}
