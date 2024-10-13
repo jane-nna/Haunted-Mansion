@@ -142,6 +142,34 @@ body {
 
 /* Apply the delay */
 #delayed-audio {
-    animation: unmuteAudio 0s ease-in 10s forwards; /* Delay the unmute for 5 seconds */
+    animation: unmuteAudio 0s ease-in 5s forwards; /* Delay the unmute for 5 seconds */
 }
 
+
+.jumpscare-container {
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+
+/* Fly-in animation */
+@keyframes flyInFromBottom {
+    from {
+        transform: translateY(100%) scale(0.5);  /* Start off-screen from the bottom and small */
+    }
+    to {
+        transform: translateY(0) scale(1);  /* End in normal position with full size */
+    }
+}
+
+.fly-image {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    height: 100%; /* Set height to fill the container */
+    max-width: none; /* Disable max-width to avoid scaling issues */
+    max-height: none; /* Disable max-height to avoid scaling issues */
+    object-fit: contain; /* Maintain aspect ratio */
+    animation: flyInFromBottom 1s ease-in-out forwards; /* Fly in and grow over 1 second */
+}
