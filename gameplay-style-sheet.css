@@ -5,7 +5,8 @@ body {
     background-color: #1a1a1a;
     color: #fff;
     display: flex;
-    height: 100vh;
+    height: 100%;
+    
 }
 
 #sidebar {
@@ -47,7 +48,7 @@ body {
 
 #location-header {
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     font-size: 24px;
 }
 
@@ -64,18 +65,20 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #222;
+   
 }
 
 #image-area img {
-    max-width: 80%;
     height: auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-height: 500px;
+    width: auto;
 }
 
 #text-area {
     flex: 0.7;
     background-color: #333;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -156,4 +159,45 @@ body {
     max-height: none; 
     object-fit: contain; 
     animation: flyInFromBottom 1s ease-in-out forwards; 
+}
+
+/*ghost animation on the foyer page*/
+@keyframes ghost-animation{
+    0%{left: 700px; transform: rotate(0deg);}
+    15%{left:700px; top:200px; transform: rotate(100deg);}
+    40%{left:700px;top:500px; transform:rotate(360deg);}
+    60%{left:800px;top:500px;transform:rotate(260deg);}
+    70%{left:800px;top:200px; transform:rotate(0deg);}
+    100%{left:700px; top:200px;}
+}
+
+
+#ghost{
+    position: absolute;
+    animation: ghost-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    height: 100px;
+    width: auto;
+    left:600px;
+    top: 200px;
+    
+}
+
+/*Henry glowing image on the computer screen*/
+
+@keyframes computer-glow {
+    0% { filter: drop-shadow(0 0 20px rgb(51, 0, 255));}
+    50% { filter: drop-shadow(0 0 50px rgb(225, 220, 243));}
+    100% {filter: drop-shadow(0 0 100px rgb(255, 255, 255));}
+  }
+  
+#henry-computer{
+    position:absolute;
+    height:110px;
+    width: auto;
+    left:815px;
+    top: 29%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    animation: computer-glow 2s infinite alternate;
 }
