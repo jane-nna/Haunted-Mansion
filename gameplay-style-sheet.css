@@ -175,13 +175,12 @@ body {
 #ghost{
     position: absolute;
     animation: ghost-animation;
-    animation-duration: 30s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
     height: 100px;
     width: auto;
     left:600px;
     top: 200px;
-    
 }
 
 /*Henry glowing image on the computer screen*/
